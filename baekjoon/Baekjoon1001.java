@@ -3,7 +3,6 @@ package baekjoon;
 import java.util.Scanner;
 
 public class Baekjoon1001 {
-
 	public static void main(String[] args) {
 		int A = 0, B = 0;
 		Scanner scanner = new Scanner(System.in);
@@ -12,5 +11,4 @@ public class Baekjoon1001 {
 		B = scanner.nextInt();
 		System.out.println(A-B);
 	}
-
 }
