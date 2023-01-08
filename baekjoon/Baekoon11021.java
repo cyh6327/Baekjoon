@@ -2,7 +2,7 @@ package baekjoon;
 
 import java.util.Scanner;
 
-public class Backjoon11022 {
+public class Baekoon11021 {
 	
 public static void main(String[] args) {
 		
@@ -16,7 +16,7 @@ public static void main(String[] args) {
 			a = scanner.nextInt();
 			b = scanner.nextInt();
 			sum = a + b;
-			System.out.println("Case #" +i+ ": "+ a + " + "+ b + " = " + sum);
+			System.out.println("Case #" +i+ ": "+ sum);
 		}
 	}
 
