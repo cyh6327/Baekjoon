@@ -6,37 +6,38 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
+/*입력
+첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.
+
+출력
+각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.*/
+
 public class Baekjoon15552 {
 
 	public static void main(String[] args) throws Exception {
 		
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in)); //선언
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		//int t = Integer.parseInt(bf.readLine());	//테스트케이스의 개수
-		//int a = Integer.parseInt(bf.readLine());
-		//int b = Integer.parseInt(bf.readLine());
-		//String a = bf.readLine();
-		//String b = bf.readLine();
-		int a = bf.read();
-		int b = bf.read();
-		bf.
+		int t = Integer.parseInt(bf.readLine()); 	//테스트케이스의 개수
 		
-		//StringTokenizer st = new StringTokenizer();
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));   //할당된 버퍼에 값 넣어주기
-		//bw.write(t);   //버퍼에 있는 값 전부 출력
-		/*
-		 * for (int i=0; i<t; i++) {
-		 * 
-		 * bw.write(a+b); }
-		 */
+		String str = null;
+		int a = 0;
+		int b = 0;
 		
-		/*
-		 * bw.write(a); bw.write(b);
-		 */
-		bw.write(a);
-		bw.write(b);
-		bw.flush();   //남아있는 데이터를 모두 출력시킴
-		bw.close();   //스트림을 닫음
+		for (int i = 0; i<t; i++) {
+			str = bf.readLine();	
+			StringTokenizer st = new StringTokenizer(str);	//띄어쓰기 기준으로 문자열 분리해줌
+			while (st.hasMoreTokens()) {
+		         a = Integer.parseInt(st.nextToken());
+		         b = Integer.parseInt(st.nextToken());
+		         bw.write(a+b + "");
+		         bw.newLine();
+		     }
+		}
+		bw.flush();
+		bw.close();
+		
 	}
 	
 }
