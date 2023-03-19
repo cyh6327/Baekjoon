@@ -13,7 +13,6 @@ public class Baekjoon2750 {
 		
 		int n = scan.nextInt();
 		List<Integer> arr = new ArrayList<>();
-		List<Integer> arr2 = new ArrayList<>();
 		
 		for(int i=0; i<n; i++) {
 			arr.add(scan.nextInt());
