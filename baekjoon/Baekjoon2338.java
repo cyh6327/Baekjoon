@@ -14,7 +14,7 @@ public class Baekjoon2338 {
 		
 		System.out.println(a.add(b));
 		System.out.println(a.subtract(b));
-		System.out.println(a.divide(b));
+		System.out.println(a.multiply(b));
 		scan.close();
 	}
 
